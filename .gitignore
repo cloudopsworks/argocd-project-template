@@ -1,0 +1,56 @@
+# BEGIN TRONADOR TEMPLATE MANAGED BLOCK
+##
+# (c) 2021-2025
+#     Cloud Ops Works LLC - https://cloudops.works/
+#     Find us on:
+#       GitHub: https://github.com/cloudopsworks
+#       WebSite: https://cloudops.works
+#     Distributed Under Apache v2.0 License
+#
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+/.env
+/.env.test
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+
+*.tar.gz
+*.rar
+
+# IntelliJ idea
+.idea/
+*.iml
+
+# Eclipse JDT
+.project
+.settings/
+.classpath
+.factorypath
+
+### VS Code ###
+.vscode/
+
+### Tronador ###
+.tronador*.mk
+.tronador
+tronador/
+
+### AI Agents ###
+.claude/
+.gstack/
+.opencode/
+.omc/
+.omx/
+.ai/
+
+# MacOS
+.DS_Store
+
+# END TRONADOR TEMPLATE MANAGED BLOCK

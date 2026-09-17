@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cluster-name-sample
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: cluster
+type: Opaque
+stringData:
+  #name: "arn:aws:eks:us-east-1:905418487951:cluster/eks-forward-shared-dev-001-usea1"
+  name: "cluster-name-sample"
+  server: "https://123456789012345668070.gr7.us-east-2.eks.amazonaws.com"
+  config: |
+    {
+      "awsAuthConfig" : {
+        "roleARN" : "arn:aws:iam::0123456788901:role/argocd-role-arn",
+        "clusterName" : "cluster-name-sample"
+      },
+      "tlsClientConfig": {
+        "insecure": false,
+        "caData" : "*******"
+      }
+    }
